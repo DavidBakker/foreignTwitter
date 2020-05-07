@@ -1,10 +1,10 @@
 BACKLOG:
----Implement open source translation library so I don't keep getting charged.
+---Refactor to req/pull console inputs for country and language, instead of hard-coding (mostly running in iPython/Jupyter, but could be handy).
+---Implement open source translation library to reduce cost.
 ---Implement chunking and threading to speed up translation batches.
----MySQL SPROC to de-dup and sum.
----Vectorize dataframe insert iterations, technically for loop is an anti-pattern.
----Optimize code, potentially remove intermediate list in one or two steps, potentially replace in-memory lists with generators
----Improve transparency with progress bar and @timer decorator
----Further normalize DB table(s) for multi-language support
----Add requirements.txt for easier portability to vEnv
----Replace string %s with f string substitution
+---Vectorize dataframe insert iterations, technically for loop/iterrow is an anti-pattern.
+---Potentially remove intermediate list a couple steps, potentially replace in-memory lists with generators.
+---Improve transparency with progress bar and @timer decorator.
+---Update string %s syntax with f'' string substitution for easier readability. 
+---Include DB columns list into insert query now that I'm using a DB SPROC to update/dedup instead of Python code.
+---Further normalize DB table(s) for multi-language support.
