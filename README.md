@@ -14,5 +14,13 @@ All of my secrets are stored in a git-ignored settings.py file, so anywhere you 
 LICENSE INFO:
 I'm saving this under generic MIT license, so read my license.txt if you're not familiar and then treat my code like it was a lego set that owed you money.
 
-FUTURE DEVELOPMENT:
-See backlog.txt file for some ideas I have for improvements/optimization.
+BACKLOG/OPTIMIZATION:
+---Refactor to req/pull console inputs for country and language, instead of hard-coding (mostly running in iPython/Jupyter, but could be handy).
+---Implement open source translation library to reduce cost.
+---Implement chunking and threading to speed up translation batches.
+---Vectorize dataframe insert iterations, technically for loop/iterrow is an anti-pattern.
+---Potentially remove intermediate list a couple steps, potentially replace in-memory lists with generators.
+---Improve transparency with progress bar and @timer decorator.
+---Update string %s syntax with f'' string substitution for easier readability. 
+---Include DB columns list into insert query now that I'm using a DB SPROC to update/dedup instead of Python code.
+---Further normalize DB table(s) for multi-language support.
