@@ -1,7 +1,4 @@
 BACKLOG:
----Update regex to remove @usernames.
----Add exclude list to remove URL cruft (http etc).
----Implement spellchecker (i.e. pyspellchecker for Spanish). Could also remove usernames and make first two items moot.
 ---Implement open source translation library so I don't keep getting charged.
 ---Implement chunking and threading to speed up translation batches.
 ---MySQL SPROC to de-dup and sum.

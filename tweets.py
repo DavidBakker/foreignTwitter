@@ -113,9 +113,11 @@ class tweetWords:
             cnx.commit()
             
         cnx.commit()
+        insCursor.callproc('Consolidate_Words')
         insCursor.close()
-        
+
         cnx.close()
+        print('Insert complete.')
 
 
 if __name__ == '__main__':
