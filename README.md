@@ -1,5 +1,5 @@
 # TwitterForeignWordUsage
-WHAT DO:
+WHAT:
 Crawls tweets in a country and language you specify, creates a wordcount and ranks by usage, then auto-translates the words using Google Translation API and returns a Pandas dataframe. exportTSV() Method allows you to export a .tsv for upload to ANKI flash card software, and save_words() inserts into a database.
 
 WHY:
@@ -14,9 +14,5 @@ All of my secrets are stored in a git-ignored settings.py file, so anywhere you 
 LICENSE INFO:
 I'm saving this under generic MIT license, so read my license.txt if you're not familiar and then treat my code like it was a lego set that owed you money.
 
-BACKLOG:
----Update regex to remove @usernames.
----Add exclude list to remove URL objects (http etc).
----Implement spellchecker (i.e. pyspellchecker for Spanish). Could also remove usernames and make first two items moot.
----Add ability to only export words that have n count instead of all of the words.
----Implement open source translation library so I don't keep getting charged.
+FUTURE DEVELOPMENT:
+See backlog.txt file for some ideas I have for improvements.
