@@ -55,6 +55,7 @@ class tweetWords:
                 time.sleep(960)
                 continue
 
+
     def count_words(self):
         print('Counting words...')
         counts = Counter()
@@ -98,7 +99,6 @@ class tweetWords:
 
     def save_words(self):
         cnx = mysql.connector.connect(**settings.DBconfig)
-
         print('Connected to database, inserting rows...')
 
         columns = ["word", "wordcount", "country", "language", "translation"]
