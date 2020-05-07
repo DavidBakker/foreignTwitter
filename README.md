@@ -1,5 +1,5 @@
 # TwitterForeignWordUsage
-WHAT DO:
+WHAT:
 Crawls tweets in a country and language you specify, creates a wordcount and ranks by usage, then auto-translates the words using Google Translation API and returns a Pandas dataframe. exportTSV() Method allows you to export a .tsv for upload to ANKI flash card software, and save_words() inserts into a database.
 
 WHY:
