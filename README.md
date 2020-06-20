@@ -1,6 +1,6 @@
 # TwitterForeignWordUsage
 ## WHAT:
-Crawls tweets in a country and language you specify, creates a wordcount and ranks by usage, then auto-translates the words using Google Translation API and returns a Pandas dataframe. exportTSV() Method allows you to export a .tsv for upload to ANKI flash card software, and save_words() inserts into a database.
+Crawls tweets in a country and language you specify, creates a wordcount and ranks by usage, then auto-translates the words using Google Translation API and returns a Pandas dataframe. exportCSV() Method allows you to export a .csv for upload to ANKI flash card software, and save_words() inserts into a database.
 
 ## WHY:
 I created this because I traveled in South America for a while and was cramming to learn enough Spanish to survive. Meanwhile, Duolingo kept feeding me words I rarely saw again. Thinking back to that time, I wanted to try and create a tool that pulled words that were not only actually used in a given language conversationally, but that would allow me to target a specific country that spoke that language as local vocabulary/slang can shift a bunch. I.e. France vs Senegal, Spain vs Colombia, Olde Jersey vs New Jersey, yada yada.
