@@ -148,10 +148,10 @@ class tweetWords:
 
 if __name__ == '__main__':
 
-    countryToSearch = 'Spain'
-    languageToSearch = 'es'
+    countryToSearch = str(input())
+    languageToSearch = str(input())
     twitteritems = 1000
-
+    #TODO: CLI prompts for methods
     spanishWords = tweetWords(countryToSearch, languageToSearch, twitteritems)
     spanishWords.fetch_tweets()
     spanishWords.count_words()
